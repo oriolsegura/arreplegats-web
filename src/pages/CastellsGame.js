@@ -14,6 +14,8 @@ import Colla from "../models/Colla";
 Howler.autoUnlock = true;
 Howler.html5PoolSize = 100;
 
+const ENABLE_GAME_AUDIO = process.env.REACT_APP_ENABLE_GAME_AUDIO === 'true';
+
 const getDateTimeToday = () => {
 	const today = new Date();
     
@@ -251,14 +253,7 @@ class CastellsGame extends Component {
 		await new Promise(res => setTimeout(res, milliseconds));
 	}
 	async playAssaig(resultat) {
-		// Versió sense sleep
-		return;
-
-		// Versió sense música
-		document.getElementById('game-screen').style.pointerEvents = 'none';
-		await this.sleep(1000)
-		document.getElementById('game-screen').style.pointerEvents = 'all';
-		return;
+		if (!ENABLE_GAME_AUDIO) return;
 		
 		const files = !this.state.results.includes(resultat) ? [] :
 			// DESCARREGAT
@@ -302,13 +297,14 @@ class CastellsGame extends Component {
 		return new Promise(resolve => setTimeout(resolve, ms));
 	}
 	async playCastell(resultat) {
-		// Versió sense música
 		document.getElementById('game-screen').style.pointerEvents = 'none';
-		await this.sleep(4000)
-		document.getElementById('game-screen').style.pointerEvents = 'all';
-		return;
 
-		// Versió amb música
+		if (!ENABLE_GAME_AUDIO) {
+			await this.sleep(4000)
+			document.getElementById('game-screen').style.pointerEvents = 'all';
+			return;
+		}
+
 		const files = !this.state.results.includes(resultat) ? [] :
 			// DESCARREGAT
 			resultat === this.state.results[0] ? ['pujada', 'aleta', 'baixada', 'sortida'] :
