@@ -26,7 +26,42 @@
     -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="canonical" href="https://arreplegats.cat" />
+    <link rel="canonical" href="https://arreplegats.cat/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://arreplegats.cat/#organization",
+            "name": "Arreplegats de la Zona Universitària",
+            "url": "https://arreplegats.cat/",
+            "logo": "https://arreplegats.cat/icon.png",
+            "description": "Pàgina web oficial de la colla castellera universitària Arreplegats de la Zona Universitària.",
+            "email": "junta.arreplegats@gmail.com",
+            "sameAs": [
+              "https://www.x.com/arreplegats",
+              "https://www.instagram.com/arreplegats",
+              "https://www.youtube.com/channel/UC-RVCefwipBS8WutREwbTmw",
+              "https://www.twitch.tv/arreplegatszu",
+              "https://www.tiktok.com/@arreplegats",
+              "https://www.facebook.com/arreplegats"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://arreplegats.cat/#website",
+            "url": "https://arreplegats.cat/",
+            "name": "Arreplegats de la Zona Universitària",
+            "description": "Pàgina web oficial de la colla castellera universitària Arreplegats de la Zona Universitària.",
+            "inLanguage": "ca",
+            "publisher": {
+              "@id": "https://arreplegats.cat/#organization"
+            }
+          }
+        ]
+      }
+    </script>
     <!--
       fonts
     -->
