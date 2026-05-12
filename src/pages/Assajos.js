@@ -7,11 +7,11 @@ class Assajos extends Component {
 				<h2>Assajos</h2>
 
 				<p>
-					Els bons castells no surten del no-res: s'han d'assajar. Ens reunim dos dies a la setmana per fer història assaig a assaig.
+					Els assajos són el punt de trobada de la colla a Barcelona: el lloc on aprenem, fem pinya i preparem cada castell amb seguretat.
 				</p>
 
 				<p>
-					Vine-hi! El nostre equip d'acollida et rebrà amb els braços oberts. No cal saber-ne gens, només et cal una camisa antiga.
+					Vine-hi! Ens reunim dos dies a la setmana i el nostre equip d'acollida et rebrà amb els braços oberts. No cal saber-ne gens, només et cal una camisa antiga.
 				</p>
 			</section>
 			<section>

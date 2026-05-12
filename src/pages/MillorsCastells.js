@@ -8,6 +8,10 @@ class MillorsCastells extends Component {
 			<section>
 				<h2>Millors Castells</h2>
 
+				<p>
+					Aquesta selecció recull els castells més destacats dels Arreplegats, fites universitàries que expliquen el nivell assolit per la colla.
+				</p>
+
 				<div className="top-gallery">
 					{
 						Object.values(castells_map).map((e, i) => {

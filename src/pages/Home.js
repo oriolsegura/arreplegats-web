@@ -36,6 +36,12 @@ class Home extends Component {
 				))
 			}
 			<section style={{paddingTop: `2rem`}}>
+				<h4>Colla castellera universitària de Barcelona</h4>
+				<p>
+					Els Arreplegats de la Zona Universitària som una colla castellera universitària de Barcelona. Assagem a la UPC, fem castells amb estudiants i mantenim viu l'esperit casteller dins la vida universitària.
+				</p>
+			</section>
+			<section>
 				<div className="floating-titles">
 					<h4>Els millors castells</h4>
 					<NavLink to="/millors-castells">Descobreix-los tots!</NavLink>

@@ -6,6 +6,10 @@ class Contactar extends Component {
 			<section>
 				<h2>Contacta'ns</h2>
 
+				<p>
+					Vols venir a assaig, proposar una actuació o parlar amb la colla? Escriu-nos i t'ajudarem a trobar la millor manera de sumar-te als Arreplegats.
+				</p>
+
 				<ul className="contact-info">
 					<li><img src="/font-awesome/mail.svg" alt="Email" style={{ width: '14px', height: '14px' }} /> Correu electrònic: <a href="mailto:junta.arreplegats@gmail.com">junta.arreplegats@gmail.com</a></li>
 					<br />

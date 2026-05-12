@@ -15,6 +15,10 @@ class QuiSom extends Component {
 		return (<>
 			<section>
 				<h2>Qui som?</h2>
+
+				<p>
+					Som els Arreplegats de la Zona Universitària, una colla castellera universitària de Barcelona oberta a estudiants amb ganes de fer pinya, aprendre i compartir castells.
+				</p>
 				
 				<div className="dictionary-entry">
 					<h4>arreplegat -ada</h4>

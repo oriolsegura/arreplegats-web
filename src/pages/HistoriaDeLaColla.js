@@ -34,6 +34,10 @@ class HistoriaDeLaColla extends Component {
 			<section className="historia">
 				<h2>Història de la colla</h2>
 
+				<p>
+					Des de 1995, els Arreplegats hem portat els castells universitaris més enllà des de Barcelona, obrint camí amb fites inèdites i una colla que es renova cada curs.
+				</p>
+
 				<h5>Els inicis</h5>
 				<p>
 					Fundats a la primavera de 1995, els Arreplegats de la Zona Universitària vam ser la segona colla castellera universitària en aparèixer. Ja des del primer moment vam apostar per només castells complets, sempre amb acotxador i enxaneta. El mateix maig del 1995 es va carregar el primer pilar de quatre, i a inicis de l'any següent van arribar els primers castells de sis: 4 de 6 descarregat i 3 de 6 carregat.
