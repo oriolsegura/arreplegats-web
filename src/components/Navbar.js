@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 class Navbar extends Component {
 	state = {
 		height: document.documentElement.clientHeight,
-		width: document.documentElement.clientWidth
+		width: document.documentElement.clientWidth,
+		mobileNavExpanded: false
 	}
 	showHide(id) {
 		const submenu = document.getElementById(id);
@@ -12,7 +13,12 @@ class Navbar extends Component {
 			submenu.classList.toggle('active');
 	}
 	expandMobile() {
-		document.getElementById('nav-links').classList.toggle('show');
+		const navLinks = document.getElementById('nav-links');
+		if (navLinks !== null) {
+			this.setState({
+				mobileNavExpanded: navLinks.classList.toggle('show')
+			});
+		}
 	}
 	hideAll() {
 		if (document.documentElement.clientHeight === this.state.height &&
@@ -20,7 +26,8 @@ class Navbar extends Component {
 			return;
 		this.setState({
 			height: document.documentElement.clientHeight,
-			width: document.documentElement.clientWidth
+			width: document.documentElement.clientWidth,
+			mobileNavExpanded: false
 		});
 
 		try {
@@ -48,8 +55,13 @@ class Navbar extends Component {
 						</NavLink>
 					</div>
 					<div className="nav-btn">
-						<button onClick={this.expandMobile}>
-							<img src="/font-awesome/align-justify.svg" alt="align-justify.svg" />
+						<button
+							onClick={() => this.expandMobile()}
+							aria-label="Menú principal"
+							aria-controls="nav-links"
+							aria-expanded={this.state.mobileNavExpanded}
+						>
+							<img src="/font-awesome/align-justify.svg" alt="" aria-hidden="true" />
 						</button>
 					</div>
 					<ul id="nav-links">
