@@ -873,7 +873,7 @@ Home
 }
 
 .content h3 {
-	font-size: 3.5vw;
+	font-size: max(1rem, 3.5vw);
 	font-weight: 700;
 	margin-top: 10px;
 	margin-bottom: 3rem;
