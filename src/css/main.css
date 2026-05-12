@@ -822,22 +822,28 @@ Home
 ===============
 */
 
-.home-buttons {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
-}
-
-.welcome-image {
+.home-hero {
 	height: calc(100vh - 5rem);
-	background-position: center 15%;
-	background-size: cover;
-	background-repeat: no-repeat;
 	width: 100vw;
+	margin: 0;
+	padding: 0;
 	position: relative;
+	overflow: hidden;
 }
 
-.overlay {
+.home-hero__picture,
+.home-hero__image {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.home-hero__image {
+	object-fit: cover;
+	object-position: center 15%;
+}
+
+.home-hero__overlay {
 	background-color: rgba(21, 168, 132, 0.5);
 	position: absolute;
 	top: 0;
@@ -845,9 +851,10 @@ Home
 	bottom: 0;
 	left: 0;
 	z-index: 2;
+	pointer-events: none;
 }
 
-.content {
+.home-hero__content {
 	position: absolute;
 	top: 25%;
 	left: calc((100vw - var(--page-width)) / 2);
@@ -855,38 +862,47 @@ Home
 	user-select: none;
 	z-index: 3;
 }
-.content * {
+
+.home-hero__content * {
 	margin: 0;
 	font-family: 'Montserrat';
 }
 
 @media screen and (max-width: 1250px) {
-	.content {
+	.home-hero__content {
 		left: calc((100vw - var(--mobile-width)) / 2);
 	}
 }
 
-.content h1 {
+.home-hero__title {
 	font-size: 10vw;
 	font-weight: 700;
 	line-height: 0.8;
 }
 
-.content h3 {
+.home-hero__tagline {
 	font-size: max(1rem, 3.5vw);
 	font-weight: 700;
 	margin-top: 10px;
 	margin-bottom: 3rem;
 }
 
-.hero-btn {
+.home-hero__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.home-hero__button {
 	border: 1px solid var(--white);
 	color: var(--white);
+	display: inline-flex;
 	padding: 15px 20px;
 	font-weight: 500;
 	transition: var(--transition);
 }
-.hero-btn:hover {
+
+.home-hero__button:hover {
 	color: var(--primary-600);
 	background-color: rgba(255, 255, 255, 0.6);
 }

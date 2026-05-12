@@ -1,40 +1,17 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import CastellCard from "../components/CastellCard";
+import HomeHero from "../components/HomeHero";
 import Quote from "../components/Quote";
 import castells_map from "../data/castells-top.json";
 import quotes from "../data/quotes.json";
 
 class Home extends Component {
 	render() {
-		const random_quotes = quotes.sort(() => 0.5 - Math.random()).slice(0, 3);
-
-		const imageSizes = [
-			{ size: '576', url: 'images/resized/2d8fm-arreplegats-2016-576_x_384.jpeg' },
-			{ size: '768', url: 'images/resized/2d8fm-arreplegats-2016-768_x_512.jpeg' },
-			{ size: '992', url: 'images/resized/2d8fm-arreplegats-2016-992_x_661.jpeg' },
-			{ size: '1200', url: 'images/resized/2d8fm-arreplegats-2016-1200_x_800.jpeg' },
-			{ size: '1920', url: 'images/resized/2d8fm-arreplegats-2016-1920_x_1280.jpeg' },
-			{ size: 'max', url: 'images/2d8fm-arreplegats-2016.png' },
-		];
+		const randomQuotes = [...quotes].sort(() => 0.5 - Math.random()).slice(0, 3);
 
 		return (<>
-			{
-				imageSizes.map((img, i) => (
-					<section key={`resized-section-${i}`} className={`welcome-image resized-img img-${img.size}`} style={{backgroundImage: `url('${img.url}')`}}>
-						<div className="overlay"></div>
-						<div className="content">
-							<h1>ARREPLEGATS</h1>
-							<h3>ELS ÚNICS QUE HO PODEN FER</h3>
-							<div className="home-buttons">
-								<NavLink to="/assajos" className="hero-btn">UNEIX-T'HI</NavLink>
-								<NavLink to="/agenda" className="hero-btn">AGENDA</NavLink>
-								<NavLink to="/contactar" className="hero-btn">CONTACTA'NS!</NavLink>
-							</div>
-						</div>
-					</section>
-				))
-			}
+			<HomeHero />
 			<section style={{paddingTop: `2rem`}}>
 				<div className="floating-titles">
 					<h4>Els millors castells</h4>
@@ -57,7 +34,7 @@ class Home extends Component {
 				<h4>Què diu la gent?</h4>
 				<div className="quotes">
 					{
-						random_quotes.map((e, i) => {
+						randomQuotes.map((e, i) => {
 							return <Quote
 								quote={e.quote}
 								author={e.author}
