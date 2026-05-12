@@ -20,6 +20,7 @@
     "deploy": "gh-pages -d build",
     "start": "PUBLIC_URL='.' react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "node scripts/generate-route-entrypoints.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
