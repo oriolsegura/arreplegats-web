@@ -57,7 +57,13 @@ class Castell extends Component {
 							data.gallery.map((e, i) => {
 								return (<div key={`image-${i}`} className="slide" style={{display: i === 0 ? 'block' : 'none'}}>
 									<div className="counter">{i+1} / {data.gallery.length}</div>
-									<img className="slide-img" src={e.link} alt={data.name} />
+									<img
+										className="slide-img"
+										src={e.link}
+										alt={e.caption || data.name}
+										loading={i === 0 ? "eager" : "lazy"}
+										decoding="async"
+									/>
 									<div className="caption">{e.caption}</div>
 								</div>);
 							})
@@ -73,7 +79,7 @@ class Castell extends Component {
 						}
 					</div>
 				</div></>
-				: <img className="top-img" src={data.link} alt={data.name} />}
+				: <img className="top-img" src={data.link} alt={data.name} loading="eager" decoding="async" />}
 				{
 					data.text.map((e, i) => {
 						return <p key={`par-${i}`}>{e}</p>;

@@ -13,8 +13,16 @@ class Patrocinadors extends Component {
 							<div className="sponsors-wrap">
 								{
 									entities.map((e, j) => {
-										return <div className="sponsor" title={e.name} style={{backgroundImage: `url('/sponsors/${e.image}')`}} key={`sponsors-${i}-${j}`}>
-										</div>;
+										return <figure className="sponsor" key={`sponsors-${i}-${j}`}>
+											<img
+												className="sponsor__image"
+												src={`/sponsors/${e.image}`}
+												alt={e.name}
+												loading="lazy"
+												decoding="async"
+											/>
+											<figcaption className="sponsor__name">{e.name}</figcaption>
+										</figure>;
 									})
 								}
 							</div>
