@@ -11,6 +11,14 @@ const sitemapPath = path.join(buildDir, "sitemap.xml");
 const siteUrl = "https://arreplegats.cat";
 const organizationId = `${siteUrl}/#organization`;
 const websiteId = `${siteUrl}/#website`;
+const homeHeroSizes = "(max-width: 576px) 576px, (max-width: 768px) 768px, (max-width: 992px) 992px, (max-width: 1200px) 1200px, 1600px";
+const homeHeroWebpImages = [
+  { width: 576, url: "/images/optimized/2d8fm-arreplegats-2016-576_x_384.webp" },
+  { width: 768, url: "/images/optimized/2d8fm-arreplegats-2016-768_x_512.webp" },
+  { width: 992, url: "/images/optimized/2d8fm-arreplegats-2016-992_x_661.webp" },
+  { width: 1200, url: "/images/optimized/2d8fm-arreplegats-2016-1200_x_800.webp" },
+  { width: 1600, url: "/images/optimized/2d8fm-arreplegats-2016-1600_x_1067.webp" },
+];
 
 const sharedLinks = [
   { href: "/", label: "Inici" },
@@ -607,6 +615,23 @@ function writeSitemap(routes) {
   fs.writeFileSync(sitemapPath, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
 }
 
+function buildHeroPreloadTag() {
+  const srcSet = homeHeroWebpImages.map((img) => `${img.url} ${img.width}w`).join(", ");
+  const fallback = homeHeroWebpImages.find((img) => img.width === 1200) || homeHeroWebpImages[0];
+
+  return `<link rel="preload" as="image" href="${fallback.url}" type="image/webp" imagesrcset="${srcSet}" imagesizes="${homeHeroSizes}" fetchpriority="high">`;
+}
+
+function addHomepageHeroPreload(html) {
+  const preload = buildHeroPreloadTag();
+
+  if (html.includes(preload)) {
+    return html;
+  }
+
+  return html.replace("</head>", `    ${preload}\n  </head>`);
+}
+
 function assertSafeRoute(route) {
   if (!route.startsWith("/") || route.includes("..") || route.includes("?") || route.includes("#")) {
     throw new Error(`Unsafe route entrypoint: ${route}`);
@@ -639,6 +664,8 @@ function main() {
   const indexHtml = fs.readFileSync(indexHtmlPath, "utf8");
   const routes = [...new Set(getRoutes(castellsTop))];
   const sitemapRoutes = [...new Set(getSitemapRoutes(castellsTop))];
+
+  fs.writeFileSync(indexHtmlPath, addHomepageHeroPreload(indexHtml));
 
   for (const route of routes) {
     const outputPath = getOutputPath(route);

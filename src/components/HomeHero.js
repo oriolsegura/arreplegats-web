@@ -1,6 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { buildHeroSrcSet, getHeroFallbackImage, HOME_HERO_IMAGES } from "../data/homeHeroImages";
+import {
+	buildHeroSrcSet,
+	getHeroFallbackImage,
+	HOME_HERO_IMAGES,
+	HOME_HERO_SIZES,
+	HOME_HERO_WEBP_IMAGES,
+} from "../data/homeHeroImages";
 
 const HERO_LINKS = [
 	{ to: "/assajos", label: "UNEIX-T'HI" },
@@ -8,19 +14,21 @@ const HERO_LINKS = [
 	{ to: "/contactar", label: "CONTACTA'NS!" },
 ];
 
-function HomeHero({ images = HOME_HERO_IMAGES }) {
+function HomeHero({ images = HOME_HERO_IMAGES, webpImages = HOME_HERO_WEBP_IMAGES }) {
 	const fallbackImage = getHeroFallbackImage(images);
 	const srcSet = buildHeroSrcSet(images);
+	const webpSrcSet = buildHeroSrcSet(webpImages);
 
 	return (
 		<section className="home-hero" aria-labelledby="home-hero-title">
 			<picture className="home-hero__picture">
-				<source srcSet={srcSet} sizes="100vw" />
+				<source type="image/webp" srcSet={webpSrcSet} sizes={HOME_HERO_SIZES} />
+				<source srcSet={srcSet} sizes={HOME_HERO_SIZES} />
 				<img
 					className="home-hero__image"
 					src={fallbackImage.url}
 					srcSet={srcSet}
-					sizes="100vw"
+					sizes={HOME_HERO_SIZES}
 					width={fallbackImage.width}
 					height={fallbackImage.height}
 					alt="Arreplegats aixecant un castell"
