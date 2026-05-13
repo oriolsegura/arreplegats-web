@@ -39,13 +39,52 @@
         "@context": "https://schema.org",
         "@graph": [
           {
-            "@type": "Organization",
+            "@type": ["SportsOrganization", "Organization"],
             "@id": "https://arreplegats.cat/#organization",
             "name": "Arreplegats de la Zona Universitària",
+            "alternateName": ["Arreplegats", "Arreplegats ZU"],
             "url": "https://arreplegats.cat/",
-            "logo": "https://arreplegats.cat/icon.png",
-            "description": "Pàgina web oficial de la colla castellera universitària Arreplegats de la Zona Universitària.",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://arreplegats.cat/icon.png"
+            },
+            "image": "https://arreplegats.cat/og-image.jpg",
+            "description": "Colla castellera universitària de Barcelona fundada el 1995 a la Zona Universitària.",
             "email": "junta.arreplegats@gmail.com",
+            "foundingDate": "1995",
+            "sport": "Castells",
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Barcelona"
+              },
+              {
+                "@type": "AdministrativeArea",
+                "name": "Catalunya"
+              }
+            ],
+            "location": {
+              "@type": "Place",
+              "name": "Zona Universitària de Barcelona",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Barcelona",
+                "addressRegion": "Catalunya",
+                "addressCountry": "ES"
+              }
+            },
+            "knowsAbout": [
+              "castells",
+              "castells universitaris",
+              "cultura popular catalana",
+              "colles castelleres universitàries"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "email": "junta.arreplegats@gmail.com",
+              "contactType": "Informació general",
+              "availableLanguage": ["ca", "es", "en"]
+            },
             "sameAs": [
               "https://www.x.com/arreplegats",
               "https://www.instagram.com/arreplegats",
@@ -62,6 +101,23 @@
             "name": "Arreplegats de la Zona Universitària",
             "description": "Pàgina web oficial de la colla castellera universitària Arreplegats de la Zona Universitària.",
             "inLanguage": "ca",
+            "publisher": {
+              "@id": "https://arreplegats.cat/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://arreplegats.cat/#webpage",
+            "url": "https://arreplegats.cat/",
+            "name": "Arreplegats de la Zona Universitària | Colla Castellera",
+            "description": "Pàgina web oficial de la colla de castellers dels Arreplegats de la Zona Universitària. Dades, contractar, i més!",
+            "inLanguage": "ca",
+            "isPartOf": {
+              "@id": "https://arreplegats.cat/#website"
+            },
+            "about": {
+              "@id": "https://arreplegats.cat/#organization"
+            },
             "publisher": {
               "@id": "https://arreplegats.cat/#organization"
             }
