@@ -9,6 +9,8 @@ const indexHtmlPath = path.join(buildDir, "index.html");
 const castellsTopPath = path.join(rootDir, "src", "data", "castells-top.json");
 const sitemapPath = path.join(buildDir, "sitemap.xml");
 const siteUrl = "https://arreplegats.cat";
+const organizationId = `${siteUrl}/#organization`;
+const websiteId = `${siteUrl}/#website`;
 
 const sharedLinks = [
   { href: "/", label: "Inici" },
@@ -24,6 +26,7 @@ const staticRouteMetadata = {
     title: "Qui som | Arreplegats de la Zona Universitària",
     description: "Coneix els Arreplegats de la Zona Universitària, colla castellera universitària de Barcelona fundada el 1995.",
     h1: "Qui som",
+    schemaType: "AboutPage",
     paragraphs: [
       "Els Arreplegats de la Zona Universitària som una colla castellera universitària de Barcelona fundada el 1995. Alcem castells amb estudiants universitaris adults i combinem cultura popular, assajos, actuacions i vida associativa.",
       "La colla és coneguda per haver assolit alguns dels grans castells del món universitari, com el 4 de 8, el 3 de 8 amb folre i el pilar de 7 amb folre i manilles.",
@@ -33,6 +36,7 @@ const staticRouteMetadata = {
     title: "Agenda | Arreplegats",
     description: "Consulta l'agenda d'assajos, actuacions i activitats dels Arreplegats de la Zona Universitària.",
     h1: "Agenda",
+    schemaType: "CollectionPage",
     paragraphs: [
       "L'agenda dels Arreplegats recull assajos, actuacions, diades, activitats socials i cites importants de la temporada castellera universitària.",
       "Segueix aquesta pàgina i les xarxes de la colla per confirmar horaris, ubicacions i possibles canvis de calendari.",
@@ -42,6 +46,7 @@ const staticRouteMetadata = {
     title: "Assajos i calendari | Arreplegats",
     description: "Horaris i informació per venir a assajar amb els Arreplegats de la Zona Universitària.",
     h1: "Assajos",
+    schemaType: "WebPage",
     paragraphs: [
       "Assagem dimarts i dijous al migdia, de 14:00 a 16:00, al pati d'Industrials (ETSEIB), i dijous al vespre, de 20:00 a 22:00, al gimnàs d'assaig dels Castellers de Sants.",
       "No cal experiència prèvia per venir a fer castells. L'equip d'acollida acompanya les persones noves i ajuda cadascú a trobar el seu lloc a la colla.",
@@ -51,6 +56,7 @@ const staticRouteMetadata = {
     title: "Gralles i tabals | Arreplegats",
     description: "Informació sobre el grup de gralles i tabals dels Arreplegats.",
     h1: "Gralles i tabals",
+    schemaType: "WebPage",
     paragraphs: [
       "Les gralles i els tabals acompanyen els castells dels Arreplegats i formen part essencial de les actuacions, cercaviles i activitats de la colla.",
     ],
@@ -59,6 +65,7 @@ const staticRouteMetadata = {
     title: "Vida universitària | Arreplegats",
     description: "Activitats, comunitat i vida universitària al voltant dels Arreplegats.",
     h1: "Vida universitària",
+    schemaType: "WebPage",
     paragraphs: [
       "A més dels assajos i actuacions, els Arreplegats són un espai de trobada universitària amb activitats socials, música, cultura popular i vida de colla.",
     ],
@@ -67,6 +74,7 @@ const staticRouteMetadata = {
     title: "Història de la colla | Arreplegats",
     description: "Història i fites dels Arreplegats de la Zona Universitària des de la seva fundació el 1995.",
     h1: "Història de la colla",
+    schemaType: "Article",
     paragraphs: [
       "Els Arreplegats vam néixer la primavera de 1995 i vam ser la segona colla castellera universitària. Des d'aleshores hem contribuït a fer créixer els castells universitaris a Barcelona i Catalunya.",
       "Entre les fites destacades hi ha el primer 4 de 8 universitari descarregat el 2009, el pilar de 7 amb folre i manilles i el primer 3 de 8 amb folre del món universitari.",
@@ -76,6 +84,7 @@ const staticRouteMetadata = {
     title: "Llista de caps de colla | Arreplegats",
     description: "Relació històrica dels caps de colla dels Arreplegats de la Zona Universitària.",
     h1: "Llista de caps de colla",
+    schemaType: "CollectionPage",
     paragraphs: [
       "Consulta la llista històrica de caps de colla que han liderat la tècnica dels Arreplegats al llarg de les temporades.",
     ],
@@ -84,6 +93,7 @@ const staticRouteMetadata = {
     title: "Llista de presidents | Arreplegats",
     description: "Relació històrica de presidents dels Arreplegats de la Zona Universitària.",
     h1: "Llista de presidents",
+    schemaType: "CollectionPage",
     paragraphs: [
       "Consulta la llista històrica de presidents que han encapçalat la junta dels Arreplegats al llarg de la història de la colla.",
     ],
@@ -92,6 +102,7 @@ const staticRouteMetadata = {
     title: "Els castells universitaris | Arreplegats",
     description: "Context sobre els castells universitaris i el paper dels Arreplegats en aquest àmbit casteller.",
     h1: "Els castells universitaris",
+    schemaType: "Article",
     paragraphs: [
       "Els castells universitaris són construccions fetes per colles formades per estudiants universitaris adults. Els Arreplegats han estat una de les colles de referència d'aquest àmbit.",
     ],
@@ -100,6 +111,7 @@ const staticRouteMetadata = {
     title: "Millors castells | Arreplegats",
     description: "Recull dels millors castells assolits pels Arreplegats de la Zona Universitària.",
     h1: "Millors castells",
+    schemaType: "CollectionPage",
     paragraphs: [
       "Entre els millors castells dels Arreplegats hi ha la torre de 8 amb folre i manilles, el pilar de 7 amb folre i manilles, el 4 de 8, el 3 de 8 amb folre, el 9 de 7 i altres construccions destacades.",
     ],
@@ -108,6 +120,7 @@ const staticRouteMetadata = {
     title: "Millors diades | Arreplegats",
     description: "Rànquing i resum de les millors diades dels Arreplegats.",
     h1: "Millors diades",
+    schemaType: "CollectionPage",
     paragraphs: [
       "Consulta les diades més destacades dels Arreplegats segons els castells assolits i el valor històric de cada actuació.",
     ],
@@ -116,6 +129,7 @@ const staticRouteMetadata = {
     title: "Resum històric | Arreplegats",
     description: "Resum històric dels castells i temporades dels Arreplegats de la Zona Universitària.",
     h1: "Resum històric",
+    schemaType: "CollectionPage",
     paragraphs: [
       "El resum històric recull l'evolució castellera dels Arreplegats i ajuda a entendre les principals fites de cada temporada.",
     ],
@@ -124,6 +138,7 @@ const staticRouteMetadata = {
     title: "Llista de diades | Arreplegats",
     description: "Llista de diades i actuacions dels Arreplegats de la Zona Universitària.",
     h1: "Llista de diades",
+    schemaType: "CollectionPage",
     paragraphs: [
       "Consulta la llista de diades i actuacions que formen part de l'historial casteller dels Arreplegats.",
     ],
@@ -132,6 +147,7 @@ const staticRouteMetadata = {
     title: "Junta directiva | Arreplegats",
     description: "Informació sobre la junta directiva dels Arreplegats de la Zona Universitària.",
     h1: "Junta directiva",
+    schemaType: "ProfilePage",
     paragraphs: [
       "La junta directiva coordina l'activitat social, institucional i organitzativa dels Arreplegats.",
     ],
@@ -140,6 +156,7 @@ const staticRouteMetadata = {
     title: "Junta tècnica | Arreplegats",
     description: "Informació sobre la junta tècnica dels Arreplegats de la Zona Universitària.",
     h1: "Junta tècnica",
+    schemaType: "ProfilePage",
     paragraphs: [
       "La junta tècnica planifica els assajos, els objectius castellers i el treball de pinyes, troncs i canalla universitària de la colla.",
     ],
@@ -148,6 +165,7 @@ const staticRouteMetadata = {
     title: "Comissió de gènere i grup de treball | Arreplegats",
     description: "Informació sobre la comissió de gènere i grup de treball dels Arreplegats.",
     h1: "Comissió de gènere i grup de treball",
+    schemaType: "ProfilePage",
     paragraphs: [
       "La comissió de gènere i grup de treball impulsa espais de cura, prevenció i millora de la convivència dins la colla.",
     ],
@@ -156,6 +174,7 @@ const staticRouteMetadata = {
     title: "Patrocinadors | Arreplegats",
     description: "Patrocinadors i col·laboradors dels Arreplegats de la Zona Universitària.",
     h1: "Patrocinadors",
+    schemaType: "CollectionPage",
     paragraphs: [
       "Els patrocinadors i col·laboradors ajuden a sostenir l'activitat castellera, cultural i associativa dels Arreplegats.",
     ],
@@ -164,6 +183,7 @@ const staticRouteMetadata = {
     title: "Fotografies | Arreplegats",
     description: "Galeria de fotografies dels Arreplegats de la Zona Universitària.",
     h1: "Fotografies",
+    schemaType: "ImageGallery",
     paragraphs: [
       "La galeria de fotografies recull imatges d'assajos, actuacions, diades i moments de vida de colla dels Arreplegats.",
     ],
@@ -172,6 +192,7 @@ const staticRouteMetadata = {
     title: "Vídeos | Arreplegats",
     description: "Vídeos d'actuacions, castells i activitats dels Arreplegats.",
     h1: "Vídeos",
+    schemaType: "VideoGallery",
     paragraphs: [
       "Els vídeos dels Arreplegats documenten castells, actuacions i activitats destacades de la colla universitària.",
     ],
@@ -180,6 +201,7 @@ const staticRouteMetadata = {
     title: "Música | Arreplegats",
     description: "Música i recursos sonors relacionats amb els Arreplegats.",
     h1: "Música",
+    schemaType: "CollectionPage",
     paragraphs: [
       "La música forma part de la cultura castellera i acompanya els castells i activitats dels Arreplegats.",
     ],
@@ -188,6 +210,7 @@ const staticRouteMetadata = {
     title: "Estatuts | Arreplegats",
     description: "Estatuts dels Arreplegats de la Zona Universitària.",
     h1: "Estatuts",
+    schemaType: "WebPage",
     paragraphs: [
       "Els estatuts recullen el marc associatiu, organitzatiu i de funcionament dels Arreplegats de la Zona Universitària.",
     ],
@@ -196,6 +219,7 @@ const staticRouteMetadata = {
     title: "Reglament de règim intern | Arreplegats",
     description: "Reglament de règim intern dels Arreplegats de la Zona Universitària.",
     h1: "Reglament de règim intern",
+    schemaType: "WebPage",
     paragraphs: [
       "El reglament de règim intern desenvolupa normes de funcionament, organització i convivència de la colla.",
     ],
@@ -204,6 +228,7 @@ const staticRouteMetadata = {
     title: "Protocol d'agressions | Arreplegats",
     description: "Protocol d'agressions dels Arreplegats de la Zona Universitària.",
     h1: "Protocol d'agressions",
+    schemaType: "WebPage",
     paragraphs: [
       "El protocol d'agressions estableix criteris i procediments per prevenir, detectar i actuar davant situacions d'agressió o vulneració de drets.",
     ],
@@ -212,6 +237,7 @@ const staticRouteMetadata = {
     title: "Jocs | Arreplegats",
     description: "Jocs i activitats interactives dels Arreplegats.",
     h1: "Jocs",
+    schemaType: "CollectionPage",
     paragraphs: [
       "La secció de jocs reuneix activitats interactives relacionades amb els Arreplegats, els castells i la vida de colla.",
     ],
@@ -220,6 +246,7 @@ const staticRouteMetadata = {
     title: "Joc Castells | Arreplegats",
     description: "Joc interactiu de castells dels Arreplegats.",
     h1: "Joc Castells",
+    schemaType: "WebApplication",
     paragraphs: [
       "Joc interactiu per explorar castells i decisions relacionades amb el món casteller universitari.",
     ],
@@ -228,6 +255,7 @@ const staticRouteMetadata = {
     title: "Sopa de lletres | Arreplegats",
     description: "Sopa de lletres dels Arreplegats amb vocabulari casteller.",
     h1: "Sopa de lletres",
+    schemaType: "WebApplication",
     paragraphs: [
       "Sopa de lletres amb paraules i vocabulari vinculats als Arreplegats i als castells.",
     ],
@@ -236,6 +264,7 @@ const staticRouteMetadata = {
     title: "Mots encreuats | Arreplegats",
     description: "Mots encreuats dels Arreplegats amb vocabulari casteller.",
     h1: "Mots encreuats",
+    schemaType: "WebApplication",
     paragraphs: [
       "Mots encreuats amb pistes i paraules relacionades amb els Arreplegats i la cultura castellera.",
     ],
@@ -244,6 +273,7 @@ const staticRouteMetadata = {
     title: "Memory | Arreplegats",
     description: "Joc de memory dels Arreplegats.",
     h1: "Memory",
+    schemaType: "WebApplication",
     paragraphs: [
       "Joc de memory dels Arreplegats amb elements visuals de la colla i el món casteller.",
     ],
@@ -252,6 +282,7 @@ const staticRouteMetadata = {
     title: "Penjat | Arreplegats",
     description: "Joc del penjat dels Arreplegats amb vocabulari casteller.",
     h1: "Penjat",
+    schemaType: "WebApplication",
     paragraphs: [
       "Joc del penjat amb paraules vinculades als castells, la colla i la cultura universitària.",
     ],
@@ -260,6 +291,7 @@ const staticRouteMetadata = {
     title: "Contactar amb Arreplegats",
     description: "Contacta amb els Arreplegats de la Zona Universitària per informació, assajos, activitats o contractacions.",
     h1: "Contactar amb Arreplegats",
+    schemaType: "ContactPage",
     paragraphs: [
       "Pots contactar amb els Arreplegats per demanar informació sobre assajos, activitats, actuacions o vida de colla.",
       "Escriu a junta.arreplegats@gmail.com o segueix @arreplegats a les xarxes socials per estar al dia de les novetats.",
@@ -269,6 +301,7 @@ const staticRouteMetadata = {
     title: "Parts del castell | Arreplegats",
     description: "Explicació de les parts d'un castell i vocabulari bàsic dels castells.",
     h1: "Parts del castell",
+    schemaType: "Article",
     paragraphs: [
       "Coneix les parts principals d'un castell, les posicions i el vocabulari bàsic que es fa servir als assajos i actuacions.",
     ],
@@ -327,6 +360,7 @@ function getRouteMetadata(route, castellsTop) {
       title,
       description: `${castell.name}: fitxa, història i imatges d'aquest castell dels Arreplegats de la Zona Universitària.`,
       h1: castell.name,
+      schemaType: "Article",
       paragraphs: [fallbackText, ...(castell.text || []).filter(Boolean)],
     };
   }
@@ -378,13 +412,52 @@ function escapeXml(value) {
 function buildOrganizationGraph() {
   return [
     {
-      "@type": "Organization",
-      "@id": `${siteUrl}/#organization`,
+      "@type": ["SportsOrganization", "Organization"],
+      "@id": organizationId,
       name: "Arreplegats de la Zona Universitària",
+      alternateName: ["Arreplegats", "Arreplegats ZU"],
       url: `${siteUrl}/`,
-      logo: `${siteUrl}/icon.png`,
-      description: "Pàgina web oficial de la colla castellera universitària Arreplegats de la Zona Universitària.",
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/icon.png`,
+      },
+      image: `${siteUrl}/og-image.jpg`,
+      description: "Colla castellera universitària de Barcelona fundada el 1995 a la Zona Universitària.",
       email: "junta.arreplegats@gmail.com",
+      foundingDate: "1995",
+      sport: "Castells",
+      areaServed: [
+        {
+          "@type": "City",
+          name: "Barcelona",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Catalunya",
+        },
+      ],
+      location: {
+        "@type": "Place",
+        name: "Zona Universitària de Barcelona",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Barcelona",
+          addressRegion: "Catalunya",
+          addressCountry: "ES",
+        },
+      },
+      knowsAbout: [
+        "castells",
+        "castells universitaris",
+        "cultura popular catalana",
+        "colles castelleres universitàries",
+      ],
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: "junta.arreplegats@gmail.com",
+        contactType: "Informació general",
+        availableLanguage: ["ca", "es", "en"],
+      },
       sameAs: [
         "https://www.x.com/arreplegats",
         "https://www.instagram.com/arreplegats",
@@ -396,13 +469,13 @@ function buildOrganizationGraph() {
     },
     {
       "@type": "WebSite",
-      "@id": `${siteUrl}/#website`,
+      "@id": websiteId,
       url: `${siteUrl}/`,
       name: "Arreplegats de la Zona Universitària",
       description: "Pàgina web oficial de la colla castellera universitària Arreplegats de la Zona Universitària.",
       inLanguage: "ca",
       publisher: {
-        "@id": `${siteUrl}/#organization`,
+        "@id": organizationId,
       },
     },
   ];
@@ -410,22 +483,43 @@ function buildOrganizationGraph() {
 
 function buildJsonLd(route, metadata) {
   const canonicalUrl = getCanonicalUrl(route);
+  const pageTypes = metadata.schemaType === "WebPage" ? "WebPage" : [metadata.schemaType, "WebPage"];
+  const pageNode = {
+    "@type": pageTypes,
+    "@id": `${canonicalUrl}#webpage`,
+    url: canonicalUrl,
+    name: metadata.title,
+    description: metadata.description,
+    inLanguage: "ca",
+    isPartOf: {
+      "@id": websiteId,
+    },
+    about: {
+      "@id": organizationId,
+    },
+    publisher: {
+      "@id": organizationId,
+    },
+  };
+
+  if (metadata.schemaType === "Article") {
+    pageNode.headline = metadata.h1;
+    pageNode.abstract = metadata.description;
+    pageNode.articleBody = metadata.paragraphs.join("\n\n");
+    pageNode.author = {
+      "@id": organizationId,
+    };
+  }
+
+  if (metadata.schemaType === "WebApplication") {
+    pageNode.applicationCategory = "GameApplication";
+    pageNode.operatingSystem = "Web";
+    pageNode.isAccessibleForFree = true;
+  }
+
   const graph = [
     ...buildOrganizationGraph(),
-    {
-      "@type": "WebPage",
-      "@id": `${canonicalUrl}#webpage`,
-      url: canonicalUrl,
-      name: metadata.title,
-      description: metadata.description,
-      inLanguage: "ca",
-      isPartOf: {
-        "@id": `${siteUrl}/#website`,
-      },
-      about: {
-        "@id": `${siteUrl}/#organization`,
-      },
-    },
+    pageNode,
   ];
 
   if (route !== "/") {
