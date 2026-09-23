@@ -4,32 +4,20 @@
 			"titol": "Direcció directiva",
 			"components": [
 				{
-					"carrec": "President",
-					"nom": "Marc Bombardó i Heras"
+					"carrec": "Presidenta",
+					"nom": "Norah Oliver i Cidoncha"
 				},
 				{
-					"carrec": "Vicepresidenta",
-					"nom": "Laia Vinagre i Comerma"
+					"carrec": "Vicepresident",
+					"nom": "Edim Salvatella i Teichman"
 				},
 				{
-					"carrec": "Secretària",
-					"nom": "Mariona Graupera i Clivillé"
-				},
-				{
-					"carrec": "Secretària",
-					"nom": "Iris Tigua i Sogas"
+					"carrec": "Secretari",
+					"nom": "Roger Font i Monteys"
 				},
 				{
 					"carrec": "Tresorer",
-					"nom": "Blai Mascaró i Martínez"
-				},
-				{
-					"carrec": "Tresorera",
-					"nom": "Teresa Pallejà i Franquet"
-				},
-				{
-					"carrec": "Tresorer",
-					"nom": "Sebastià Serra i Salom"
+					"nom": "Nil Giol i Colom"
 				}
 			]
 		},
@@ -37,6 +25,156 @@
 			{
 				"titol": "Tresoreria",
 				"components": [
+					{
+						"carrec": "Cap de tresoreria",
+						"nom": "Nil Giol i Colom"
+					},
+					{
+						"nom": "Marc Bombardó i Heras"
+					}
+				]
+			},
+			{
+				"titol": "Equip de logística",
+				"components": [
+					{
+						"carrec": "Co-cap de logística",
+						"nom": "Mariona Graupera i Clivillé"
+					},
+					{
+						"carrec": "Co-cap de logística",
+						"nom": "Lluís Aguilar i Teiona"
+					},
+					{
+						"nom": "Andrea Muñoz i Gonzalez"
+					},
+					{
+						"nom": "Júlia Font i Aguilar"
+					},
+					{
+						"nom": "Sergi López i Llobregat"
+					}
+				]
+			},
+			{
+				"titol": "Equip d'acolliment",
+				"components": [
+					{
+						"carrec": "Co-cap d'acolliment",
+						"nom": "Arnau Xicoy i Casaramona"
+					},
+					{
+						"carrec": "Co-cap d'acolliment",
+						"nom": "Alba Pena i Gràcia"
+					}
+				]
+			},
+			{
+				"titol": "Gralles i tabals",
+				"components": [
+					{
+						"carrec": "Co-cap de músics",
+						"nom": "Sergi López i Llobregat"
+					},
+					{
+						"carrec": "Co-cap de músics",
+						"nom": "Genís Ciurana i Mauri"
+					}
+				]
+			},
+			{
+				"titol": "Equip de sanitàries",
+				"components": [
+					{
+						"carrec": "Cap de sanitàries",
+						"nom": "Anna Camps i Fonollosa"
+					},
+					{
+						"nom": "Jade Sfar i Solà"
+					},
+					{
+						"nom": "Queralt Polo i Girona"
+					},
+					{
+						"nom": "Roger Franquesa i Nebot"
+					}
+				]
+			},
+			{
+				"titol": "Equip de material",
+				"components": [
+					{
+						"carrec": "Co-cap de material",
+						"nom": "Irene Ruiz i Rossell"
+					},
+					{
+						"carrec": "Co-cap de material",
+						"nom": "Miquel Vicens i Salomon"
+					},
+					{
+						"nom": "Martí Casanova i Gonzàlez"
+					}
+				]
+			},
+			{
+				"titol": "Equip d'activitats",
+				"components": [
+					{
+						"carrec": "Cap d'activitats",
+						"nom": "Gemma Cerdó i Albertí"
+					},
+					{
+						"nom": "Salvador Sansó i Femenias"
+					},
+					{
+						"nom": "Anna de Ayguavives i Cortes"
+					},
+					{
+						"nom": "Marcel Esteve i Garcia"
+					},
+					{
+						"nom": "Aina Cañabate i Perez"
+					},
+					{
+						"nom": "Elena Rivas i Garcia"
+					},
+					{
+						"nom": "Noa Vigueras i Ruiz"
+					}
+				]
+			},
+			{
+				"titol": "Contractacions",
+				"components": [
+					{
+						"carrec": "Cap de contractacions",
+						"nom": "Marc Bombardó i Heras"
+					}
+				]
+			}
+		]
+	},
+	"anteriors": {
+		"2025-2026": {
+			"direccio": {
+				"titol": "Direcció directiva",
+				"components": [
+					{
+						"carrec": "President",
+						"nom": "Marc Bombardó i Heras"
+					},
+					{
+						"carrec": "Vicepresidenta",
+						"nom": "Laia Vinagre i Comerma"
+					},
+					{
+						"carrec": "Secretària",
+						"nom": "Mariona Graupera i Clivillé"
+					},
+					{
+						"carrec": "Secretària",
+						"nom": "Iris Tigua i Sogas"
+					},
 					{
 						"carrec": "Tresorer",
 						"nom": "Blai Mascaró i Martínez"
@@ -51,167 +189,184 @@
 					}
 				]
 			},
-			{
-				"titol": "Promoció i difusió",
-				"components": [
-					{
-						"carrec": "Co-cap de promoció i difusió",
-						"nom": "Berta Coca i Carmona"
-					},
-					{
-						"carrec": "Co-cap de promoció i difusió",
-						"nom": "Norah Oliver i Cidoncha"
-					},
-					{
-						"nom": "Martina Cusidó i Gascón"
-					},
-					{
-						"nom": "Eloy Estopiñà i Viloria"
-					},
-					{
-						"nom": "Macarena Lozano i Anoro"
-					},
-					{
-						"nom": "Gerard Pérez i Carceller"
-					},
-					{
-						"nom": "Lena Riol i Fernández"
-					},
-					{
-						"nom": "Edim Salvatella i Teichman"
-					}
-				]
-			},
-			{
-				"titol": "Equip de logística",
-				"components": [
-					{
-						"carrec": "Cap de logística",
-						"nom": "Clara Llonch i Vidal"
-					},
-					{
-						"nom": "Roger Font i Monteys"
-					},
-					{
-						"nom": "Adriana Guillermo i Cassà"
-					},
-					{
-						"nom": "Álvaro Taberner i Viñals"
-					},
-					{
-						"nom": "Olivier Torras-Puigdomènech i Chela"
-					}
-				]
-			},
-			{
-				"titol": "Equip d'acolliment",
-				"components": [
-					{
-						"carrec": "Co-cap d'acolliment",
-						"nom": "Elena Balici i Balici"
-					},
-					{
-						"carrec": "Co-cap d'acolliment",
-						"nom": "Salvador Sansó i Femenias"
-					},
-					{
-						"nom": "Macià Febrer i Rotger"
-					},
-					{
-						"nom": "Alba Pena i Gràcia"
-					},
-					{
-						"nom": "Arnau Xicoy i Casaramona"
-					}
-				]
-			},
-			{
-				"titol": "Gralles i tabals",
-				"components": [
-					{
-						"carrec": "Cap de músics",
-						"nom": "Iris Tigua i Sogas"
-					}
-				]
-			},
-			{
-				"titol": "Equip de sanitàries",
-				"components": [
-					{
-						"carrec": "Cap de sanitàries",
-						"nom": "Lena Riol i Fernández"
-					},
-					{
-						"nom": "Anna Camps i Fonollosa"
-					},
-					{
-						"nom": "Adriana Guillermo i Cassà"
-					},
-					{
-						"nom": "Joan Muñoz i Sbert"
-					},
-					{
-						"nom": "Eulàlia Rambla i Albet"
-					},
-					{
-						"nom": "Jade Sfar i Solà"
-					},
-					{
-						"nom": "Júlia Torregrossa i Orta"
-					}
-				]
-			},
-			{
-				"titol": "Equip de material",
-				"components": [
-					{
-						"nom": "Emma Mateu i Masvidal"
-					},
-					{
-						"nom": "Gonzalo Muñoz i Garcia"
-					},
-					{
-						"nom": "Edgar Tena i Marqués"
-					}
-				]
-			},
-			{
-				"titol": "Equip d'activitats",
-				"components": [
-					{
-						"nom": "Anna Ayguavives i Cortes"
-					},
-					{
-						"nom": "Berta Boixet i Lladó"
-					},
-					{
-						"nom": "Gemma Cerdó i Albertí"
-					},
-					{
-						"nom": "Marc Colomer i Xaus"
-					},
-					{
-						"nom": "Marcel Esteve i Garcia"
-					},
-					{
-						"nom": "Laia Homs i Vilaseca"
-					},
-					{
-						"nom": "Rita Vidal i Colomer"
-					}
-				]
-			},
-			{
-				"titol": "Contractacions",
-				"components": [
-					{
-						"nom": "Eric Tusquets i Bartos"
-					}
-				]
-			}
-		]
-	},
-	"anteriors": {
+			"junta": [
+				{
+					"titol": "Tresoreria",
+					"components": [
+						{
+							"carrec": "Tresorer",
+							"nom": "Blai Mascaró i Martínez"
+						},
+						{
+							"carrec": "Tresorera",
+							"nom": "Teresa Pallejà i Franquet"
+						},
+						{
+							"carrec": "Tresorer",
+							"nom": "Sebastià Serra i Salom"
+						}
+					]
+				},
+				{
+					"titol": "Promoció i difusió",
+					"components": [
+						{
+							"carrec": "Co-cap de promoció i difusió",
+							"nom": "Berta Coca i Carmona"
+						},
+						{
+							"carrec": "Co-cap de promoció i difusió",
+							"nom": "Norah Oliver i Cidoncha"
+						},
+						{
+							"nom": "Martina Cusidó i Gascón"
+						},
+						{
+							"nom": "Eloy Estopiñà i Viloria"
+						},
+						{
+							"nom": "Macarena Lozano i Anoro"
+						},
+						{
+							"nom": "Gerard Pérez i Carceller"
+						},
+						{
+							"nom": "Lena Riol i Fernández"
+						},
+						{
+							"nom": "Edim Salvatella i Teichman"
+						}
+					]
+				},
+				{
+					"titol": "Equip de logística",
+					"components": [
+						{
+							"carrec": "Cap de logística",
+							"nom": "Clara Llonch i Vidal"
+						},
+						{
+							"nom": "Roger Font i Monteys"
+						},
+						{
+							"nom": "Adriana Guillermo i Cassà"
+						},
+						{
+							"nom": "Álvaro Taberner i Viñals"
+						},
+						{
+							"nom": "Olivier Torras-Puigdomènech i Chela"
+						}
+					]
+				},
+				{
+					"titol": "Equip d'acolliment",
+					"components": [
+						{
+							"carrec": "Co-cap d'acolliment",
+							"nom": "Elena Balici i Balici"
+						},
+						{
+							"carrec": "Co-cap d'acolliment",
+							"nom": "Salvador Sansó i Femenias"
+						},
+						{
+							"nom": "Macià Febrer i Rotger"
+						},
+						{
+							"nom": "Alba Pena i Gràcia"
+						},
+						{
+							"nom": "Arnau Xicoy i Casaramona"
+						}
+					]
+				},
+				{
+					"titol": "Gralles i tabals",
+					"components": [
+						{
+							"carrec": "Cap de músics",
+							"nom": "Iris Tigua i Sogas"
+						}
+					]
+				},
+				{
+					"titol": "Equip de sanitàries",
+					"components": [
+						{
+							"carrec": "Cap de sanitàries",
+							"nom": "Lena Riol i Fernández"
+						},
+						{
+							"nom": "Anna Camps i Fonollosa"
+						},
+						{
+							"nom": "Adriana Guillermo i Cassà"
+						},
+						{
+							"nom": "Joan Muñoz i Sbert"
+						},
+						{
+							"nom": "Eulàlia Rambla i Albet"
+						},
+						{
+							"nom": "Jade Sfar i Solà"
+						},
+						{
+							"nom": "Júlia Torregrossa i Orta"
+						}
+					]
+				},
+				{
+					"titol": "Equip de material",
+					"components": [
+						{
+							"nom": "Emma Mateu i Masvidal"
+						},
+						{
+							"nom": "Gonzalo Muñoz i Garcia"
+						},
+						{
+							"nom": "Edgar Tena i Marqués"
+						}
+					]
+				},
+				{
+					"titol": "Equip d'activitats",
+					"components": [
+						{
+							"nom": "Anna Ayguavives i Cortes"
+						},
+						{
+							"nom": "Berta Boixet i Lladó"
+						},
+						{
+							"nom": "Gemma Cerdó i Albertí"
+						},
+						{
+							"nom": "Marc Colomer i Xaus"
+						},
+						{
+							"nom": "Marcel Esteve i Garcia"
+						},
+						{
+							"nom": "Laia Homs i Vilaseca"
+						},
+						{
+							"nom": "Rita Vidal i Colomer"
+						}
+					]
+				},
+				{
+					"titol": "Contractacions",
+					"components": [
+						{
+							"nom": "Eric Tusquets i Bartos"
+						}
+					]
+				}
+			]
+		},
 		"2024-2025": {
 			"direccio": {
 				"titol": "Direcció directiva",

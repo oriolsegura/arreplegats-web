@@ -235,8 +235,26 @@
 		"name": "Cristina Oliveira i Coll",
 		"mote": "Crispeta",
 		"from": [2024],
-		"to": [null],
+		"to": [2025],
 		"link": "presidents/crispeta.jpg",
+		"text": [
+			"—"
+		]
+	},
+	{
+		"name": "Marc Bombardó i Heras",
+		"from": [2025],
+		"to": [2026],
+		"link": "",
+		"text": [
+			"—"
+		]
+	},
+	{
+		"name": "Norah Oliver i Cidoncha",
+		"from": [2026],
+		"to": [null],
+		"link": "",
 		"text": [
 			"—"
 		]
