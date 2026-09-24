@@ -5,26 +5,26 @@
 			"components": [
 				{
 					"carrec": "Cap de colla",
-					"nom": "Júlia Font i Aguilar"
+					"nom": "Berta Bach i Manresa"
 				},
 				{
 					"carrec": "Sots-cap de colla",
-					"nom": "Anna Santamaria i Balaguer"
+					"nom": "Alguer Castellví i Veciana"
 				},
 				{
 					"type": "hr"
 				},
 				{
 					"carrec": "Cap de troncs",
-					"nom": "Laia Sonet i Argemí"
+					"nom": "Marina Blasco i Jover"
 				},
 				{
-					"carrec": "Cap de pinyes, folres i manilles",
-					"nom": "Roger Miró i Nogués"
+					"carrec": "Cap de pinyes",
+					"nom": "Guillem Romagosa i Raventós"
 				},
 				{
 					"carrec": "Cap de poms",
-					"nom": "Pau García i Rovira"
+					"nom": "Alguer Castellví i Veciana"
 				}
 			]
 		},
@@ -34,43 +34,43 @@
 				"components": [
 					{
 						"carrec": "Cap de troncs",
+						"nom": "Marina Blasco i Jover"
+					},
+					{
 						"nom": "Laia Sonet i Argemí"
 					},
 					{
-						"nom": "Berta Bach i Manresa"
+						"nom": "Queralt Polo i Girona"
 					},
 					{
-						"nom": "Lia Pla i Abelló"
+						"nom": "Anna Camps i Fonollosa"
 					}
 				]
 			},
 			{
-				"titol": "Equip de pinyes, folres i manilles",
+				"titol": "Equip de pinyes",
 				"components": [
 					{
-						"carrec": "Cap de pinyes, folres i manilles",
-						"nom": "Roger Miró i Nogués"
+						"carrec": "Cap de pinyes",
+						"nom": "Guillem Romagosa i Raventós"
 					},
 					{
-						"nom": "Oriol Bisquert i Lopez"
-					},
-					{
-						"nom": "Bet Esteve i Corbera"
-					},
-					{
-						"nom": "Clara Fabregat i Fornós"
-					},
-					{
-						"nom": "Fèlix Ferret i Freixedas"
+						"nom": "Jad Sfar i Solà"
 					},
 					{
 						"nom": "Eloi Garcia i Moratona"
 					},
 					{
-						"nom": "Ariadna González i Montagut"
+						"nom": "Clara Fabregat i Fornós"
 					},
 					{
-						"nom": "Eric Tusquets i Bartos"
+						"nom": "Júlia Salvat i Ombarek"
+					},
+					{
+						"nom": "Noah Sfar i Solà"
+					},
+					{
+						"nom": "Bet Romera i Miravent"
 					}
 				]
 			},
@@ -79,16 +79,16 @@
 				"components": [
 					{
 						"carrec": "Cap de poms",
-						"nom": "Pau García i Rovira"
+						"nom": "Alguer Castellví i Veciana"
 					},
 					{
-						"nom": "Guifré Bagés i Alonso"
+						"nom": "Clara Cervera i Garreta"
 					},
 					{
-						"nom": "Amanda Martínez i Vila"
+						"nom": "Berta Marquès i Saleta"
 					},
 					{
-						"nom": "Guillem Romagosa i Raventós"
+						"nom": "Aina Bertran i Gràcia"
 					}
 				]
 			},
@@ -97,13 +97,13 @@
 				"components": [
 					{
 						"carrec": "Cap de pilars",
-						"nom": "Alba Sirag i Grau"
-					},
-					{
-						"nom": "Eloy Estopiñà i Viloria"
+						"nom": "Paula Tejedor i Sucarrats"
 					},
 					{
 						"nom": "Macarena Lozano i Anoro"
+					},
+					{
+						"nom": "Manel Lora i Ponce"
 					}
 				]
 			},
@@ -112,22 +112,150 @@
 				"components": [
 					{
 						"carrec": "Cap d'assaig tècnic",
-						"nom": "Lluís Feliu i Cano"
+						"nom": "Dani Marchante i Pibernat"
 					},
 					{
-						"nom": "Pablo López i García"
+						"nom": "Lluís Aguilar i Teiona"
 					},
 					{
-						"nom": "Pere Mansilla i Salvadó"
+						"nom": "Roger Font i Monteys"
 					},
 					{
-						"nom": "Aina Vila i Pont"
+						"nom": "Roc de Moner i Ros"
 					}
 				]
 			}
 		]
 	},
 	"anteriors": {
+		"2025-2026": {
+			"direccio": {
+				"titol": "Direcció tècnica",
+				"components": [
+					{
+						"carrec": "Cap de colla",
+						"nom": "Júlia Font i Aguilar"
+					},
+					{
+						"carrec": "Sots-cap de colla",
+						"nom": "Anna Santamaria i Balaguer"
+					},
+					{
+						"type": "hr"
+					},
+					{
+						"carrec": "Cap de troncs",
+						"nom": "Laia Sonet i Argemí"
+					},
+					{
+						"carrec": "Cap de pinyes, folres i manilles",
+						"nom": "Roger Miró i Nogués"
+					},
+					{
+						"carrec": "Cap de poms",
+						"nom": "Pau García i Rovira"
+					}
+				]
+			},
+			"junta": [
+				{
+					"titol": "Equip de troncs",
+					"components": [
+						{
+							"carrec": "Cap de troncs",
+							"nom": "Laia Sonet i Argemí"
+						},
+						{
+							"nom": "Berta Bach i Manresa"
+						},
+						{
+							"nom": "Lia Pla i Abelló"
+						}
+					]
+				},
+				{
+					"titol": "Equip de pinyes, folres i manilles",
+					"components": [
+						{
+							"carrec": "Cap de pinyes, folres i manilles",
+							"nom": "Roger Miró i Nogués"
+						},
+						{
+							"nom": "Oriol Bisquert i Lopez"
+						},
+						{
+							"nom": "Bet Esteve i Corbera"
+						},
+						{
+							"nom": "Clara Fabregat i Fornós"
+						},
+						{
+							"nom": "Fèlix Ferret i Freixedas"
+						},
+						{
+							"nom": "Eloi Garcia i Moratona"
+						},
+						{
+							"nom": "Ariadna González i Montagut"
+						},
+						{
+							"nom": "Eric Tusquets i Bartos"
+						}
+					]
+				},
+				{
+					"titol": "Equip de poms",
+					"components": [
+						{
+							"carrec": "Cap de poms",
+							"nom": "Pau García i Rovira"
+						},
+						{
+							"nom": "Guifré Bagés i Alonso"
+						},
+						{
+							"nom": "Amanda Martínez i Vila"
+						},
+						{
+							"nom": "Guillem Romagosa i Raventós"
+						}
+					]
+				},
+				{
+					"titol": "Equip de pilars",
+					"components": [
+						{
+							"carrec": "Cap de pilars",
+							"nom": "Alba Sirag i Grau"
+						},
+						{
+							"nom": "Eloy Estopiñà i Viloria"
+						},
+						{
+							"nom": "Macarena Lozano i Anoro"
+						}
+					]
+				},
+				{
+					"titol": "Equip d'assaig tècnic",
+					"components": [
+						{
+							"carrec": "Cap d'assaig tècnic",
+							"nom": "Lluís Feliu i Cano"
+						},
+						{
+							"nom": "Pablo López i García"
+						},
+						{
+							"nom": "Pere Mansilla i Salvadó"
+						},
+						{
+							"nom": "Aina Vila i Pont"
+						}
+					]
+				}
+			]
+		},
 		"2024-2025": {
 			"direccio": {
 				"titol": "Direcció tècnica",
