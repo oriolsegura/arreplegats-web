@@ -219,8 +219,8 @@
 	},
 	{
 		"name": "Júlia Font i Aguilar",
-		"from": [2023],
-		"to": [2024],
+		"from": [2023, 2025],
+		"to": [2024, 2026],
 		"link": "caps-de-colla/julia-font.jpg",
 		"text": [
 			"—"
@@ -229,8 +229,17 @@
 	{
 		"name": "Jordi Torrens i Camprubí",
 		"from": [2024],
-		"to": [null],
+		"to": [2025],
 		"link": "caps-de-colla/torrens.jpg",
+		"text": [
+			"—"
+		]
+	},
+	{
+		"name": "Berta Bach i Manresa",
+		"from": [2026],
+		"to": [null],
+		"link": "",
 		"text": [
 			"—"
 		]
