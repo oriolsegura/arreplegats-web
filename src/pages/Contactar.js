@@ -20,7 +20,13 @@ class Contactar extends Component {
 				<br />
 
 				<div style={{ display: 'flex', justifyContent: 'center' }}>
-					<img src="/images/colla-all.jpg" alt="Colla dels Arreplegats" style={{ width: '90%', transform: 'scale(1.05)' }} />
+					<img
+						src="/images/colla-diada-maig-2026.webp"
+						alt="Foto de grup dels Arreplegats a la diada de maig de 2026"
+						width="1600"
+						height="1066"
+						style={{ width: '90%', height: 'auto', transform: 'scale(1.05)' }}
+					/>
 				</div>
 
 				<br />
