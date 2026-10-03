@@ -55,6 +55,9 @@ describe("route entrypoint metadata", () => {
   test("generates static routes for every public route and top castell page", () => {
     const staticRoutes = getStaticRoutes();
 
+    expect(staticRoutes).toContain("/eines");
+    expect(getRouteMeta("/eines").title).toBe("Eines per als membres: Aleta | Arreplegats");
+
     for (const route of publicRoutes) {
       expect(staticRoutes).toContain(route);
     }

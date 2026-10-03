@@ -18,6 +18,7 @@ const publicRoutes = [
   "/qui-som",
   "/agenda",
   "/assajos",
+  "/eines",
   "/gralles-i-tabals",
   "/vida-universitaria",
   "/historia-de-la-colla",

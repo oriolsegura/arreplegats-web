@@ -18,6 +18,7 @@ describe("Navbar", () => {
 
 		expect(internalLinks).toContain("/qui-som/");
 		expect(internalLinks).toContain("/assajos/");
+		expect(screen.getByRole("link", { name: "Eines per als membres" })).toHaveAttribute("href", "/eines/");
 		expect(internalLinks).toContain("/contactar/");
 		for (const href of internalLinks) {
 			expect(href).toMatch(/\/$/);

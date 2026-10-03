@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import QuiSom from "./pages/QuiSom";
 // import Agenda from "./pages/Agenda";
 import Assajos from "./pages/Assajos";
+import Eines from "./pages/Eines";
 import GrallesTabals from "./pages/GrallesTabals";
 import VidaUniversitaria from "./pages/VidaUniversitaria";
 import HistoriaDeLaColla from "./pages/HistoriaDeLaColla";
@@ -65,6 +66,7 @@ function App() {
 					{/* <Route path="/agenda" element={<Agenda withAssajos={true} />} /> */}
 					<Route path="/agenda" element={<AssajosCalendar />} />
 					<Route path="/assajos" element={<Assajos />} />
+					<Route path="/eines" element={<Eines />} />
 					<Route path="/gralles-i-tabals" element={<GrallesTabals />} />
 					<Route path="/vida-universitaria" element={<VidaUniversitaria />} />
 					<Route path="/historia-de-la-colla" element={<HistoriaDeLaColla />} />

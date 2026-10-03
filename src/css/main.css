@@ -1128,6 +1128,67 @@ section p a:hover {
 	box-shadow: var(--shadow-3);
 }
 
+/* Eines per als membres */
+.member-tool {
+	padding: 2rem;
+	background: var(--white);
+	border-top: 4px solid var(--primary-700);
+	border-radius: var(--borderRadius);
+	box-shadow: var(--shadow-1);
+}
+
+.member-tool__features {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.5rem;
+	margin: 2rem 0;
+}
+
+.member-tool__features li {
+	padding: 1.25rem;
+	background: var(--primary-100);
+	border-radius: var(--borderRadius);
+}
+
+.member-tool__features h3 {
+	font-size: 1.25rem;
+	color: var(--primary-800);
+	margin-bottom: 0.75rem;
+}
+
+.member-tool__action {
+	margin: 0 0 1.5rem;
+}
+
+.member-tool__action a {
+	background: var(--primary-700);
+}
+
+.member-tool__case {
+	text-align: center;
+}
+
+.member-tool__case a {
+	color: var(--primary-700);
+	text-decoration: underline;
+}
+
+.member-tool a:focus-visible {
+	outline: 3px solid var(--primary-800);
+	outline-offset: 4px;
+}
+
+@media screen and (max-width: 768px) {
+	.member-tool {
+		padding: 1.25rem;
+	}
+
+	.member-tool__features {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+}
+
 /*
 =============== 
 Història
