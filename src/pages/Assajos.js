@@ -38,6 +38,12 @@ class Assajos extends Component {
 					title="Calendari d'assajos"
 				></iframe>
 			</section>
+			<section>
+				<h3 id="aleta">Com ens organitzem</h3>
+				<p>
+					Per coordinar els assajos i les diades fem servir <a href="https://aleta.castellera.cat/" target="_blank" rel="noreferrer">Aleta</a>, l'app per a colles castelleres. Hi confirmem l'assistència, preparem les pinyes i rebem els avisos de la colla. El calendari d'aquí dalt també surt d'Aleta. Quan t'uneixis als Arreplegats, et donarem accés perquè puguis apuntar-te als assajos i a les actuacions des del mòbil.
+				</p>
+			</section>
 		</>);
 	}
 }
